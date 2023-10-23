@@ -16,3 +16,5 @@ Suggests:
 Depends: 
     R (>= 2.10)
 Config/testthat/edition: 3
+URL: https://github.com/anastat1/anastator
+BugReports: https://github.com/anastat1/anastator/issues
