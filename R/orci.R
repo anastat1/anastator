@@ -14,7 +14,7 @@
 #' beta <- summary(model)$coefficients["x2", "Estimate"]
 #' SE.beta <- summary(model)$coefficients["x2", "Std. Error"]
 #' OR_95CI(beta, SE.beta, 0.95, 2)
-OR_95CI <- function(coef, se, siglevel, roundto) {
+orci <- function(coef, se, siglevel, roundto) {
   q <- 1 - siglevel / 2
   OR <- exp(coef)
   ORlcl <- exp(coef - qnorm(q) * se)
